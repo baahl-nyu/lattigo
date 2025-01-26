@@ -5,12 +5,12 @@ import (
 	"io"
 	"slices"
 
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/ring/ringqp"
-	"github.com/tuneinsight/lattigo/v6/utils"
-	"github.com/tuneinsight/lattigo/v6/utils/sampling"
-	"github.com/tuneinsight/lattigo/v6/utils/structs"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/ring/ringqp"
+	"github.com/baahl-nyu/lattigo/v6/utils"
+	"github.com/baahl-nyu/lattigo/v6/utils/sampling"
+	"github.com/baahl-nyu/lattigo/v6/utils/structs"
 )
 
 // EvaluationKeyGenProtocol is the structure storing the parameters for the collective EvaluationKey generation.

@@ -5,8 +5,8 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/utils/bignum"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/utils/bignum"
 )
 
 // Ring is a structure that implements the operation in the ring R_QP.

@@ -1,8 +1,8 @@
 package rgsw
 
 import (
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/ring"
 )
 
 // NoiseRGSWCiphertext returns the log2 of the standard deviation of the noise of each component of the RGSW ciphertext.

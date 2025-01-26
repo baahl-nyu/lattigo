@@ -11,10 +11,10 @@ import (
 	"slices"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/ring/ringqp"
-	"github.com/tuneinsight/lattigo/v6/utils"
-	"github.com/tuneinsight/lattigo/v6/utils/buffer"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/ring/ringqp"
+	"github.com/baahl-nyu/lattigo/v6/utils"
+	"github.com/baahl-nyu/lattigo/v6/utils/buffer"
 )
 
 // MaxLogN is the log2 of the largest supported polynomial modulus degree.

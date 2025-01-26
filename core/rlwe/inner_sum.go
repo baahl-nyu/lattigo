@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/ring/ringqp"
-	"github.com/tuneinsight/lattigo/v6/utils"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/ring/ringqp"
+	"github.com/baahl-nyu/lattigo/v6/utils"
 )
 
 // Trace maps X -> sum((-1)^i * X^{i*n+1}) for n <= i < N

@@ -12,9 +12,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/crypto/blake2b"
 
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/utils"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/utils"
 )
 
 var flagPrintNoise = flag.Bool("print-noise", false, "print the residual noise")

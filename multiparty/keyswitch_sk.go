@@ -5,11 +5,11 @@ import (
 	"io"
 	"math"
 
-	"github.com/tuneinsight/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/ring"
 
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/utils"
-	"github.com/tuneinsight/lattigo/v6/utils/sampling"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/utils"
+	"github.com/baahl-nyu/lattigo/v6/utils/sampling"
 )
 
 // KeySwitchProtocol is the structure storing the parameters and and precomputations for the collective key-switching protocol.

@@ -3,9 +3,9 @@ package polynomial
 import (
 	"fmt"
 
-	"github.com/tuneinsight/lattigo/v6/circuits/common/polynomial"
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/schemes/bgv"
+	"github.com/baahl-nyu/lattigo/v6/circuits/common/polynomial"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/schemes/bgv"
 )
 
 type Evaluator struct {

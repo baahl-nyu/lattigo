@@ -11,7 +11,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/require"
-	"github.com/tuneinsight/lattigo/v6/utils"
+	"github.com/baahl-nyu/lattigo/v6/utils"
 )
 
 // binarySerializer is a testing interface for byte encoding and decoding.

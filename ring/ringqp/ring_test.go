@@ -3,10 +3,10 @@ package ringqp
 import (
 	"testing"
 
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/utils/buffer"
-	"github.com/tuneinsight/lattigo/v6/utils/sampling"
-	"github.com/tuneinsight/lattigo/v6/utils/structs"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/utils/buffer"
+	"github.com/baahl-nyu/lattigo/v6/utils/sampling"
+	"github.com/baahl-nyu/lattigo/v6/utils/structs"
 
 	"github.com/stretchr/testify/require"
 )

@@ -6,7 +6,7 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/tuneinsight/lattigo/v6/utils/bignum"
+	"github.com/baahl-nyu/lattigo/v6/utils/bignum"
 )
 
 const (

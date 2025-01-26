@@ -3,10 +3,10 @@ package multiparty
 import (
 	"io"
 
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/ring/ringqp"
-	"github.com/tuneinsight/lattigo/v6/utils/sampling"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/ring/ringqp"
+	"github.com/baahl-nyu/lattigo/v6/utils/sampling"
 )
 
 // PublicKeyGenProtocol is the structure storing the parameters and and precomputations for

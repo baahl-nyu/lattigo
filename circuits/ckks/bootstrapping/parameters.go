@@ -6,11 +6,11 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/tuneinsight/lattigo/v6/circuits/ckks/dft"
-	"github.com/tuneinsight/lattigo/v6/circuits/ckks/mod1"
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/schemes/ckks"
-	"github.com/tuneinsight/lattigo/v6/utils"
+	"github.com/baahl-nyu/lattigo/v6/circuits/ckks/dft"
+	"github.com/baahl-nyu/lattigo/v6/circuits/ckks/mod1"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/schemes/ckks"
+	"github.com/baahl-nyu/lattigo/v6/utils"
 )
 
 // Parameters is a struct storing the parameters

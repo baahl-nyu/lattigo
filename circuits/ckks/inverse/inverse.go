@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/tuneinsight/lattigo/v6/circuits/ckks/bootstrapping"
-	"github.com/tuneinsight/lattigo/v6/circuits/ckks/comparison"
-	"github.com/tuneinsight/lattigo/v6/circuits/ckks/minimax"
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/schemes/ckks"
-	"github.com/tuneinsight/lattigo/v6/utils"
+	"github.com/baahl-nyu/lattigo/v6/circuits/ckks/bootstrapping"
+	"github.com/baahl-nyu/lattigo/v6/circuits/ckks/comparison"
+	"github.com/baahl-nyu/lattigo/v6/circuits/ckks/minimax"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/schemes/ckks"
+	"github.com/baahl-nyu/lattigo/v6/utils"
 )
 
 // Evaluator is an evaluator used to evaluate the inverses of ciphertexts.

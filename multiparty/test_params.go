@@ -1,7 +1,7 @@
 package multiparty
 
 import (
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
 )
 
 type TestParametersLiteral struct {

@@ -7,8 +7,8 @@ import (
 	"math/big"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/utils/bignum"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/utils/bignum"
 )
 
 // MetaData is a struct storing metadata.

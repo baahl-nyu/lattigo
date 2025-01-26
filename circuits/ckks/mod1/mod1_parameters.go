@@ -7,11 +7,11 @@ import (
 	"math/big"
 	"math/bits"
 
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/schemes/ckks"
-	"github.com/tuneinsight/lattigo/v6/utils"
-	"github.com/tuneinsight/lattigo/v6/utils/bignum"
-	"github.com/tuneinsight/lattigo/v6/utils/cosine"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/schemes/ckks"
+	"github.com/baahl-nyu/lattigo/v6/utils"
+	"github.com/baahl-nyu/lattigo/v6/utils/bignum"
+	"github.com/baahl-nyu/lattigo/v6/utils/cosine"
 )
 
 // Type is the type of function/approximation used to evaluate x mod 1.

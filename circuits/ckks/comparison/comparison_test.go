@@ -9,11 +9,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tuneinsight/lattigo/v6/circuits/ckks/bootstrapping"
-	"github.com/tuneinsight/lattigo/v6/circuits/ckks/minimax"
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/schemes/ckks"
+	"github.com/baahl-nyu/lattigo/v6/circuits/ckks/bootstrapping"
+	"github.com/baahl-nyu/lattigo/v6/circuits/ckks/minimax"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/schemes/ckks"
 )
 
 var printPrecisionStats = flag.Bool("print-precision", false, "print precision stats")

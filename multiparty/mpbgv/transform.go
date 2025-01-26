@@ -3,11 +3,11 @@ package mpbgv
 import (
 	"fmt"
 
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/multiparty"
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/schemes/bgv"
-	"github.com/tuneinsight/lattigo/v6/utils/sampling"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/multiparty"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/schemes/bgv"
+	"github.com/baahl-nyu/lattigo/v6/utils/sampling"
 )
 
 // MaskedTransformProtocol is a struct storing the parameters for the [MaskedTransformProtocol] protocol.

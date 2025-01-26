@@ -7,10 +7,10 @@ import (
 	"slices"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/tuneinsight/lattigo/v6/ring/ringqp"
-	"github.com/tuneinsight/lattigo/v6/utils/buffer"
-	"github.com/tuneinsight/lattigo/v6/utils/sampling"
-	"github.com/tuneinsight/lattigo/v6/utils/structs"
+	"github.com/baahl-nyu/lattigo/v6/ring/ringqp"
+	"github.com/baahl-nyu/lattigo/v6/utils/buffer"
+	"github.com/baahl-nyu/lattigo/v6/utils/sampling"
+	"github.com/baahl-nyu/lattigo/v6/utils/structs"
 )
 
 // SecretKey is a type for generic RLWE secret keys.

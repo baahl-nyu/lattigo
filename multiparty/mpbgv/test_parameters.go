@@ -1,6 +1,6 @@
 package mpbgv
 
-import "github.com/tuneinsight/lattigo/v6/schemes/bgv"
+import "github.com/baahl-nyu/lattigo/v6/schemes/bgv"
 
 var (
 

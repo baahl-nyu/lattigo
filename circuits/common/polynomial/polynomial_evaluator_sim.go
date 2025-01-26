@@ -1,6 +1,6 @@
 package polynomial
 
-import "github.com/tuneinsight/lattigo/v6/core/rlwe"
+import "github.com/baahl-nyu/lattigo/v6/core/rlwe"
 
 // SimOperand is a dummy operand that
 // only stores its level and scale.

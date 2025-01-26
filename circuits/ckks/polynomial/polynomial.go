@@ -4,8 +4,8 @@ package polynomial
 import (
 	"math/big"
 
-	"github.com/tuneinsight/lattigo/v6/circuits/common/polynomial"
-	"github.com/tuneinsight/lattigo/v6/utils/bignum"
+	"github.com/baahl-nyu/lattigo/v6/circuits/common/polynomial"
+	"github.com/baahl-nyu/lattigo/v6/utils/bignum"
 )
 
 // Polynomial is a type wrapping the type [polynomial.Polynomial].

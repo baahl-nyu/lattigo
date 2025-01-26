@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tuneinsight/lattigo/v6/utils/bignum"
+	"github.com/baahl-nyu/lattigo/v6/utils/bignum"
 )
 
 func BenchmarkRing(b *testing.B) {

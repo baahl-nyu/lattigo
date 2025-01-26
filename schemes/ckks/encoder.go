@@ -5,12 +5,12 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/tuneinsight/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/ring"
 
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/ring/ringqp"
-	"github.com/tuneinsight/lattigo/v6/utils"
-	"github.com/tuneinsight/lattigo/v6/utils/bignum"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/ring/ringqp"
+	"github.com/baahl-nyu/lattigo/v6/utils"
+	"github.com/baahl-nyu/lattigo/v6/utils/bignum"
 )
 
 type Float interface {

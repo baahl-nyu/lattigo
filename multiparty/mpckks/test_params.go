@@ -1,6 +1,6 @@
 package mpckks
 
-import "github.com/tuneinsight/lattigo/v6/schemes/ckks"
+import "github.com/baahl-nyu/lattigo/v6/schemes/ckks"
 
 var (
 

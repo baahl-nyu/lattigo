@@ -3,8 +3,8 @@ package rlwe
 import (
 	"io"
 
-	"github.com/tuneinsight/lattigo/v6/ring"
-	"github.com/tuneinsight/lattigo/v6/utils/sampling"
+	"github.com/baahl-nyu/lattigo/v6/ring"
+	"github.com/baahl-nyu/lattigo/v6/utils/sampling"
 )
 
 // Plaintext is a common base type for RLWE plaintexts.

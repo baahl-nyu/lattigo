@@ -2,11 +2,11 @@
 package lintrans
 
 import (
-	"github.com/tuneinsight/lattigo/v6/circuits/common/lintrans"
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/schemes"
-	"github.com/tuneinsight/lattigo/v6/schemes/bgv"
-	"github.com/tuneinsight/lattigo/v6/utils"
+	"github.com/baahl-nyu/lattigo/v6/circuits/common/lintrans"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/schemes"
+	"github.com/baahl-nyu/lattigo/v6/schemes/bgv"
+	"github.com/baahl-nyu/lattigo/v6/utils"
 )
 
 // Diagonals is a wrapper of [lintrans.Diagonals].
