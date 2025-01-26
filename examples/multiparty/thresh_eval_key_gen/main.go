@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tuneinsight/lattigo/v6/core/rlwe"
-	"github.com/tuneinsight/lattigo/v6/multiparty"
-	"github.com/tuneinsight/lattigo/v6/utils/sampling"
+	"github.com/baahl-nyu/lattigo/v6/core/rlwe"
+	"github.com/baahl-nyu/lattigo/v6/multiparty"
+	"github.com/baahl-nyu/lattigo/v6/utils/sampling"
 )
 
 // This example showcases the use of the multiparty package to generate an evaluation key in a multiparty setting.

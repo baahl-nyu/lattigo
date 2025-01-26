@@ -3,8 +3,8 @@ package examples
 import (
 	"testing"
 
-	"github.com/tuneinsight/lattigo/v6/schemes/bgv"
-	"github.com/tuneinsight/lattigo/v6/schemes/ckks"
+	"github.com/baahl-nyu/lattigo/v6/schemes/bgv"
+	"github.com/baahl-nyu/lattigo/v6/schemes/ckks"
 )
 
 func TestExampleParams(t *testing.T) {
