@@ -122,7 +122,7 @@ func NewRemez(p RemezParameters) (r *Remez) {
 // threshold: the minimum value that (maxErr-minErr)/minErr (the normalized absolute difference
 // between the maximum and minimum approximation error over the defined intervals) must take
 // before the approximation process is terminated.
-func (r *Remez) Approximate(maxIter int, threshold float64) {
+func (r *Remez) Approximate(maxIter int, threshold float64, debug bool) {
 
 	decimals := int(-math.Log(threshold)/math.Log(10)+0.5) + 10
 
@@ -142,7 +142,9 @@ func (r *Remez) Approximate(maxIter int, threshold float64) {
 		nErr := new(big.Float).Sub(r.MaxErr, r.MinErr)
 		nErr.Quo(nErr, r.MinErr)
 
-		fmt.Printf("Iteration: %2d - %.*f\n", i, decimals, nErr)
+		if debug {
+			fmt.Printf("Iteration: %2d - %.*f\n", i, decimals, nErr)
+		}
 
 		if nErr.Cmp(new(big.Float).SetFloat64(threshold)) < 1 {
 			break

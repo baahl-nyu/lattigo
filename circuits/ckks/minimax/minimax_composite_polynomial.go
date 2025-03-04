@@ -81,9 +81,9 @@ var CoeffsSignX4Cheby = []string{"0", "1.1962890625", "0", "-0.2392578125", "0",
 //
 // See [GenMinimaxCompositePolynomial] for information about how to instantiate and
 // parameterize each input value of the algorithm.
-func GenMinimaxCompositePolynomialForSign(prec uint, logalpha, logerr int, deg []int) {
+func GenMinimaxCompositePolynomialForSign(prec uint, logalpha, logerr int, deg []int, debug bool) {
 
-	coeffs := GenMinimaxCompositePolynomial(prec, logalpha, logerr, deg, bignum.Sign)
+	coeffs := GenMinimaxCompositePolynomial(prec, logalpha, logerr, deg, bignum.Sign, debug)
 
 	decimals := int(float64(logalpha)/math.Log2(10)+0.5) + 10
 
@@ -123,7 +123,7 @@ func GenMinimaxCompositePolynomialForSign(prec uint, logalpha, logerr int, deg [
 // The function will print information about each step of the computation in real time so that it can be monitored.
 //
 // The underlying algorithm use the multi-interval Remez algorithm of https://eprint.iacr.org/2020/834.pdf.
-func GenMinimaxCompositePolynomial(prec uint, logalpha, logerr int, deg []int, f func(*big.Float) *big.Float) (coeffs [][]*big.Float) {
+func GenMinimaxCompositePolynomial(prec uint, logalpha, logerr int, deg []int, f func(*big.Float) *big.Float, debug bool) (coeffs [][]*big.Float) {
 	decimals := int(float64(logalpha)/math.Log2(10)+0.5) + 10
 
 	// Precision of the output value of the sign polynomial
@@ -159,13 +159,18 @@ func GenMinimaxCompositePolynomial(prec uint, logalpha, logerr int, deg []int, f
 		OptimalScanStep: true,
 	}
 
-	fmt.Printf("P[0]\n")
-	fmt.Printf("Interval: [%.*f, %.*f] U [%.*f, %.*f]\n", decimals, &intervals[0].A, decimals, &intervals[0].B, decimals, &intervals[1].A, decimals, &intervals[1].B)
+	if debug {
+		fmt.Printf("P[0]\n")
+		fmt.Printf("Interval: [%.*f, %.*f] U [%.*f, %.*f]\n", decimals, &intervals[0].A, decimals, &intervals[0].B, decimals, &intervals[1].A, decimals, &intervals[1].B)
+	}
 	r := bignum.NewRemez(params)
-	r.Approximate(maxIters, alpha)
+	r.Approximate(maxIters, alpha, debug)
 	//r.ShowCoeffs(decimals)
-	r.ShowError(decimals)
-	fmt.Println()
+
+	if debug {
+		r.ShowError(decimals)
+		fmt.Println()
+	}
 
 	coeffs = make([][]*big.Float, len(deg))
 
