@@ -211,7 +211,7 @@ func GenMinimaxCompositePolynomial(prec uint, logalpha, logerr int, deg []int, f
 		fmt.Printf("P[%d]\n", i)
 		fmt.Printf("Interval: [%.*f, %.*f] U [%.*f, %.*f]\n", decimals, &intervals[0].A, decimals, &intervals[0].B, decimals, &intervals[1].A, decimals, &intervals[1].B)
 		r = bignum.NewRemez(params)
-		r.Approximate(maxIters, alpha)
+		r.Approximate(maxIters, alpha, debug)
 		//r.ShowCoeffs(decimals)
 		r.ShowError(decimals)
 		fmt.Println()
