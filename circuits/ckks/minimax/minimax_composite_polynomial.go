@@ -167,9 +167,7 @@ func GenMinimaxCompositePolynomial(prec uint, logalpha, logerr int, deg []int, f
 	r.Approximate(maxIters, alpha, debug)
 	//r.ShowCoeffs(decimals)
 
-	fmt.Println("HALLKJLKJFLSFD", debug)
 	if debug {
-		fmt.Println("INSIDE OF DEBUG STATEMNT")
 		r.ShowError(decimals)
 		fmt.Println()
 	}
@@ -210,13 +208,19 @@ func GenMinimaxCompositePolynomial(prec uint, logalpha, logerr int, deg []int, f
 			OptimalScanStep: true,
 		}
 
-		fmt.Printf("P[%d]\n", i)
-		fmt.Printf("Interval: [%.*f, %.*f] U [%.*f, %.*f]\n", decimals, &intervals[0].A, decimals, &intervals[0].B, decimals, &intervals[1].A, decimals, &intervals[1].B)
+		if debug {
+			fmt.Printf("P[%d]\n", i)
+			fmt.Printf("Interval: [%.*f, %.*f] U [%.*f, %.*f]\n", decimals, &intervals[0].A, decimals, &intervals[0].B, decimals, &intervals[1].A, decimals, &intervals[1].B)
+		}
+
 		r = bignum.NewRemez(params)
 		r.Approximate(maxIters, alpha, debug)
 		//r.ShowCoeffs(decimals)
-		r.ShowError(decimals)
-		fmt.Println()
+
+		if debug {
+			r.ShowError(decimals)
+			fmt.Println()
+		}
 	}
 
 	// Since this is the last polynomial, we can skip the interval scaling.
