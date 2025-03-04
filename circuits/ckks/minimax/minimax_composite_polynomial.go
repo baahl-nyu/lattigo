@@ -167,7 +167,9 @@ func GenMinimaxCompositePolynomial(prec uint, logalpha, logerr int, deg []int, f
 	r.Approximate(maxIters, alpha, debug)
 	//r.ShowCoeffs(decimals)
 
+	fmt.Println("HALLKJLKJFLSFD", debug)
 	if debug {
+		fmt.Println("INSIDE OF DEBUG STATEMNT")
 		r.ShowError(decimals)
 		fmt.Println()
 	}
