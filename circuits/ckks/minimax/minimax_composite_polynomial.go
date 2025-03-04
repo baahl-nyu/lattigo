@@ -229,9 +229,11 @@ func GenMinimaxCompositePolynomial(prec uint, logalpha, logerr int, deg []int, f
 		coeffs[len(deg)-1][j] = new(big.Float).Set(r.Coeffs[j])
 	}
 
-	f64, _ := r.MaxErr.Float64()
-	fmt.Printf("Output Precision: %f\n", math.Log2(f64))
-	fmt.Println()
+	if debug {
+		f64, _ := r.MaxErr.Float64()
+		fmt.Printf("Output Precision: %f\n", math.Log2(f64))
+		fmt.Println()
+	}
 
 	return coeffs
 }
